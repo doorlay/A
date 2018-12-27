@@ -1,2 +1,5 @@
-# A
-A program written in C++. Not sure of its function yet.
+# Easy Scrape
+A python web scraping program for beginners, easy to install and easy to run.  
+
+---
+
