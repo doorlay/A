@@ -10,4 +10,4 @@ A python web scraping program for beginners, easy to install and run.
 **How it works**  
 
 Easy Scrape is a web scraping program written in Python, designed to be beginner-friendly and easy to install 
-and run for those new to web scraping. It can be used to scrape
+and run for those new to web scraping. It uses the built-in python urllib library, for ease of access.
