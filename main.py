@@ -1,1 +1,1 @@
-#This is going to be a webscraping project, written in python.
+# This program will be used to manage stocks.
