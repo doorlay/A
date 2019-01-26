@@ -1,5 +1,5 @@
-# Easy Scrape
-A python web scraping program for beginners, easy to install and run.  
+# StockScrape
+A python web scraping program to help manage stock portfolios.
 
 ---
 **Requirements**  
