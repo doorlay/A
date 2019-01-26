@@ -1,1 +1,1 @@
-# This file will handle the purchasing of stocks.
+# This file will manage the purchasing of stocks.
