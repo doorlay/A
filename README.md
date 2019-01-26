@@ -1,4 +1,4 @@
-# StockScrape
+# Stock Scrape
 A python web scraping program to help manage stock portfolios.
 
 ---
