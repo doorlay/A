@@ -5,5 +5,11 @@ I will also be writing information to this file upon purchases
 Here is an example of what I hope the data to look like:
 
 Stock symbol
-Date purchased
-Price purchased
+Purchase Price
+Date of purchase 
+
+APPL
+164.88
+01-30-19
+
+
