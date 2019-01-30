@@ -2,4 +2,8 @@ This will be my database for my stock purchases.
 This will allow me to scrape data from this file to compare current prices to purchase prices.
 I will also be writing information to this file upon purchases
 
-Testing
+Here is an example of what I hope the data to look like:
+
+Stock symbol
+Date purchased
+Price purchased
