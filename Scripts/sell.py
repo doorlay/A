@@ -1,5 +1,7 @@
+# data needed to make a sell decision
 
-
-
-def timecheck(a,b):
-  if 
+# stock symbol
+# current price
+# purchase price
+# date of purchase price
+# current date
