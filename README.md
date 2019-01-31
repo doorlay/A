@@ -7,3 +7,4 @@ A python web scraping program to help manage stock portfolios.
 - Python requests library  
 **Getting started**  
 1. pip install requests
+using nasdaq.com/symbol
