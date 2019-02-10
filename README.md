@@ -6,5 +6,7 @@ A python web scraping program to help manage stock portfolios.
 - Python (3.7.2) Installed, with the proper PATH.
 - Python requests library  
 **Getting started**  
-1. pip install requests
-using nasdaq.com/symbol
+1. Register an API key here, for free. https://www.alphavantage.co/
+2. pip install alpha_vantage
+
+
