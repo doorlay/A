@@ -1,3 +1,5 @@
+from DBScrape import DBscrape
+
 # data needed to make a sell decision
 
 # stock symbol
@@ -5,6 +7,8 @@
 # purchase price
 # date of purchase price
 # current date
+
+DBarray = DBscrape()
 print("Here are the stocks you have available:")
 print(DBarray)
 symb = input("Stock symbol?"
