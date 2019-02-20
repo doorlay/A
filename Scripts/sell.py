@@ -9,7 +9,7 @@ from scrape import scr
 
 DBarray = scr()
 print("Here are the stocks you have available:")
-print(DBarray)
+print(DBarray[0],DBarray[3])
 
 
 def timecheck():
