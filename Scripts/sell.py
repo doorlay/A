@@ -8,10 +8,10 @@ from DBscrape import scrape
 # date of purchase price
 # current date
 
-DBarray = DBscrape()
+DBarray = scrape()
 print("Here are the stocks you have available:")
 print(DBarray)
-symb = input("Stock symbol?"
+
 
 def timecheck():
   
