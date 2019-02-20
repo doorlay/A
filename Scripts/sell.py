@@ -8,7 +8,7 @@ from scrape import scr
 # date of purchase price
 # current date
 
-DBarray = scrape()
+DBarray = scr()
 print("Here are the stocks you have available:")
 print(DBarray)
 
