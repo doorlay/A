@@ -1,5 +1,9 @@
-# This file will scrape the data from the database to be turned into an array.
+# This file contains a function to scrape the database and create an array of stock info.
+# This function will be imported to the 'scrape.py' file within the Scripts folder.
 
-database1 = open(Database/database.txt)
-database2 = database1.read()
-DBarray = database2.splitlines()
+def DBscrape():
+	database1 = open(Database/database.txt)
+	database2 = database1.read()
+	DBarray = database2.splitlines()
+	
+
