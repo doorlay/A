@@ -1,15 +1,20 @@
-This will be my database for my stock purchases.
-This will allow me to scrape data from this file to compare current prices to purchase prices.
-I will also be writing information to this file upon purchases
+APPL
+164.88
+01-30-19
+AMD
+24.08
+02-20-19
 
-Here is an example of what I hope the data to look like:
+
+
+^ example data for my stock program. 
+What I want the data to look like:
 
 Stock symbol
 Purchase Price
 Date of purchase 
 
-APPL
-164.88
-01-30-19
 
-
+This will be my database for my stock purchases.
+This will allow me to scrape data from this file to compare current prices to purchase prices.
+I will also be writing information to this file upon purchases
