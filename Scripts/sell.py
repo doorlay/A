@@ -5,6 +5,9 @@
 # purchase price
 # date of purchase price
 # current date
+print("Here are the stocks you have available:")
+print(arrayone)
+symb = input("Stock symbol?"
 
 def timecheck():
   
