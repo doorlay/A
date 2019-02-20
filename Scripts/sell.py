@@ -6,7 +6,7 @@
 # date of purchase price
 # current date
 print("Here are the stocks you have available:")
-print(arrayone)
+print(DBarray)
 symb = input("Stock symbol?"
 
 def timecheck():
