@@ -7,7 +7,8 @@
 # current date
 
 def timecheck():
+  
   # Function that checks if it's been four weeks or not.
 
-if (current price / purchase price >= .20):
+if (current_price / purchase_price >= .20):
   timecheck()
