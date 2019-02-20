@@ -1,4 +1,4 @@
-from DBScrape import DBscrape
+from DBscrape import scrape
 
 # data needed to make a sell decision
 
