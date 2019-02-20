@@ -6,6 +6,7 @@ def scr():
 	database1 = open(Database/database.txt)
 	database2 = database1.read()
 	DBarray = database2.splitlines()
+	return DBarray
 
 
 # This will handle gathering the stock data from the internet.
