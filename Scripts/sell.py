@@ -7,6 +7,7 @@ from scrape import scr
 # purchase price
 # date of purchase price
 
+# Assigns an array containing all the database info to a variable
 DBarray = scr()
 print("Here are the stocks you have available:")
 print(DBarray[0],DBarray[3])
