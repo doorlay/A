@@ -10,3 +10,4 @@ in value. Never average down.
 4. Don't buy a common stock listed for less than $15.
 5. Generally, try to buy fewer shares of a higher priced stock, rather than more shares of a lower priced one.
 6. When buying stocks, do so based on price and value charts. Ignore book value, dividend, PE ratio.
+7. Find some way to implement puts and calls for this program.
