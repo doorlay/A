@@ -23,7 +23,7 @@ pprint(data.head(2))
 # This function will be imported to both the sell.py file and the buy.py file, in order to fetch real time prices on command.
 
 # parameter accepted will be the stock symbol 
-function getDataFrom(nameofstock):
+def getDataFrom(nameofstock):
 	
 	# will create a list containing the below info
 	data = [stockSymbol, purchasePrice, purchaseDate]
