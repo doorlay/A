@@ -1,5 +1,7 @@
 # Imports TimeSeries function which gets real time data
 from alpha_vantage.timeseries import TimeSeries
+# Imports json, to parse the api output
+import json
 
 # This first function creates an array from the database of purchased stocks.
 # This function will be imported to the 'sell.py' file within the Scripts folder.
@@ -12,9 +14,16 @@ def scr():
 
 # This will handle gathering the stock data from the internet.
 
-from pprint import pprint
+# Assigns ts to an api call that uses the user's api key
 ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
-data, meta_data = ts.get_intraday(symbol='MSFT', outputsize='compact')
+
+# Assings data to the json output from the api call
+data = ts.get_intraday(symbol='MSFT', outputsize='compact')
+
+# Creates jsonParsed, a dictionary, from the parsed json data
+jsonParsed = json.loads(data)
+
+# prints data to test out the corresponding parts the dictionary needs
 print(data)
 
 # The info will then be sent through the other files to be analyzed.
