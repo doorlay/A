@@ -14,7 +14,7 @@ def scr():
 
 from pprint import pprint
 ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
-data, meta_data = ts.get_intraday(symbol='MSFT',interval='1min', outputsize='full')
+data, meta_data = ts.get_intraday(symbol='MSFT', outputsize='compact')
 print(data)
 
 # The info will then be sent through the other files to be analyzed.
