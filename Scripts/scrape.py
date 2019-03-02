@@ -21,7 +21,7 @@ ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
 data = ts.get_intraday(symbol='MSFT', outputsize='compact')
 
 # Creates jsonParsed, a dictionary, from the parsed json data
-jsonParsed = json.loads(data)
+# jsonParsed = json.loads(data)
 
 # prints data to test out the corresponding parts the dictionary needs
 print(data)
