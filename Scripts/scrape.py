@@ -1,4 +1,5 @@
-# This file will handle all of the scraping of the program. 
+# Imports TimeSeries function which gets real time data
+from alpha_vantage.timeseries import TimeSeries
 
 # This first function creates an array from the database of purchased stocks.
 # This function will be imported to the 'sell.py' file within the Scripts folder.
@@ -11,11 +12,10 @@ def scr():
 
 # This will handle gathering the stock data from the internet.
 
-from alpha_vantage.timeseries import TimeSeries
 from pprint import pprint
-ts = TimeSeries(key='52UIN9CWN6RNDHXJ', output_format='pandas')
+ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
 data, meta_data = ts.get_intraday(symbol='MSFT',interval='1min', outputsize='full')
-pprint(data.head(2))
+print(data.head(2))
 
 # The info will then be sent through the other files to be analyzed.
 
