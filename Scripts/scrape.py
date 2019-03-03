@@ -25,7 +25,7 @@ data = ts.get_intraday(symbol='MSFT', outputsize='compact')
 # below is commented out for now, as its giving me an error. Need to figure out a way to get the data into a python dictionary.
 # jsonParsed = json.loads(data)
 # prints data to test out the corresponding parts the dictionary needs
-print(data)
+print(type(data))
 
 # The info will then be sent through the other files to be analyzed.
 
