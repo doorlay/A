@@ -19,13 +19,14 @@ ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
 
 # Assings data to the json output from the api call
 data = ts.get_intraday(symbol='MSFT', outputsize='compact')
+print(type(data))
 
 # Creates jsonParsed, a dictionary, from the parsed json data
 # below is commented out for now, as its giving me an error. Need to figure out a way to get the data into a python dictionary.
-# jsonParsed = json.loads(data)
-
+jsonParsed = json.loads(data)
+print(type(jsonParsed))
 # prints data to test out the corresponding parts the dictionary needs
-print(data)
+# print(data)
 
 # The info will then be sent through the other files to be analyzed.
 
