@@ -1,12 +1,13 @@
 from scrape import scr
 
 # data needed to make a sell decision
-
-# stock symbol 
-# current price
-# purchase price
-# date of purchase price
-
+'''
+Stock symbol
+current price
+purchase price
+date of purchase
+current date
+'''
 # Assigns an array containing all the database info to a variable
 DBarray = scr()
 print("Here are the stocks you have available:")
