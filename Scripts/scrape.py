@@ -12,28 +12,26 @@ def scr():
 	return DBarray
 
 
-# This will handle gathering the stock data from the internet.
-
-# Assigns ts to an api call that uses the user's api key
-ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
-
-# Assings data to the json output from the api call. I believe this is actually a tuple, in python?
-# That would explain why I keep getting errors when I use json.loads, becuase it's already in a python format in a tuple.
-data = ts.get_intraday(symbol='MSFT', outputsize='compact', interval = '1min')
-
-# below is commented out for now, as its giving me an error. Need to figure out a way to get the data into a python dictionary.
-# prints data to test out the corresponding parts the dictionary needs
-print(data)
-
 # The info will then be sent through the other files to be analyzed.
 
 # below is a psuedo-code example of how I want my data fetching function to run.
 # This function will be imported to both the sell.py file and the buy.py file, in order to fetch real time prices on command.
 
+# maybe send the parameter in with some ' ' around it? See if that works.
+def getDataFrom(stock):
+	# Assigns ts to an api call that uses the user's api key
+	ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
+	# Assings data to the output of the api call, using the stock symbol as parameter
+	# the stock symbol generally has '' around it. Check to see if this works.
+	data = ts.get_intraday(symbol=stock, outputsize='compact', interval = '1min')
+	print(data)
+
+
+
 # parameter accepted will be the stock symbol 
-def getDataFrom(nameofstock):
+'''def getDataFrom(nameofstock):
 	
 	# will create a list containing the below info
 	data = [stockSymbol, purchasePrice, purchaseDate]
 	# returns the data
-	return data
+	return data '''
