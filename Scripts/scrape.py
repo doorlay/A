@@ -27,7 +27,7 @@ def getDataFrom(stock):
 	print(data)
 
 
-getDatafrom('MSFT')
+getDataFrom('MSFT')
 
 # parameter accepted will be the stock symbol 
 '''def getDataFrom(nameofstock):
