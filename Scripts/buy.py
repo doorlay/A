@@ -10,5 +10,5 @@ from scrape import getDataFrom
 # - double bottom
 # - flat base 
 
-stock = input("What stock do you want to get data from? Enter with 'quotes':)
+stock = input("What stock do you want to get data from? Enter with 'quotes':")
 getDataFrom(stock)
