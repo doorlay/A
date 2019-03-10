@@ -27,11 +27,13 @@ def getDataFrom(stock):
 	# datatype of dataone appears to be dictionary, unlike data which is a tuple.
 	dataone = data[0]
 	datatwo = list(dataone.items())[0]
-	print(datatwo)
+	datathree = datatwo[1]
+	datafour = datathree['1. open']
+	print(datafour)
 
 
 
-getDataFrom('AMD')
+getDataFrom('MSFT')
 
 # parameter accepted will be the stock symbol 
 '''def getDataFrom(nameofstock):
