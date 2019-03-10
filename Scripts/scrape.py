@@ -43,7 +43,6 @@ def getData(stock):
 	price = getPrice(stock)
 	date = getDate()
 	stockData = [stock, price, date]
-	print(stockData)
 	return stockData
 
 getData('AAPL')
