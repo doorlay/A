@@ -1,5 +1,6 @@
 # Imports TimeSeries function which gets real time data
 from alpha_vantage.timeseries import TimeSeries
+
 # Imports json, to parse the api output
 import json
 
@@ -11,7 +12,7 @@ def scr():
 	# Returns an array of all purchased stocks from the database.txt file
 	return DBarray
 
-def getDataFrom(stock):
+def getPrice(stock):
 	# Enter your personal api key here! Required to make api calls
 	ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
 	
@@ -23,18 +24,18 @@ def getDataFrom(stock):
 	datatwo = list(dataone.items())[0]
 	datathree = datatwo[1]
 	
-	# Gets just the current price of the stock, assigns it to 'datafour'
+	# Gets just the current price of the stock, assigns it to 'datafour', returns to user
 	datafour = datathree['1. open']
-	print(datafour)
+	return datafour
 
 
 # Parameters must be entered within the quotes. I'll figure out a way around this soon.
-getDataFrom('MSFT')
+getPrice('MSFT')
 
 # parameter accepted will be the stock symbol 
 '''def getDataFrom(nameofstock):
 	
 	# will create a list containing the below info
-	data = [stockSymbol, purchasePrice, purchaseDate]
+	data = [stockSymbol, currentPrice, currentData]
 	# returns the data
 	return data '''
