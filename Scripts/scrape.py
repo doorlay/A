@@ -24,10 +24,14 @@ def getDataFrom(stock):
 	# Assings data to the output of the api call, using the stock symbol as parameter
 	# the stock symbol generally has '' around it. Check to see if this works.
 	data = ts.get_intraday(symbol=stock, outputsize='compact', interval = '1min')
-	print(data)
+	# datatype of dataone appears to be dictionary, unlike data which is a tuple.
+	dataone = data[0]
+	datatwo = list(dataone.items())[0]
+	print(datatwo)
 
 
-getDataFrom('AAPL')
+
+getDataFrom('AMD')
 
 # parameter accepted will be the stock symbol 
 '''def getDataFrom(nameofstock):
