@@ -29,7 +29,7 @@ def getPrice(stock):
 	# Entire json output is assigned to 'data'
 	data = ts.get_intraday(symbol=stock, outputsize='compact', interval = '1min')
 	
-	# The following three assignments isolate the most current info on the specific stock
+	# The following three assignments isolate the most current price of the specific stock
 	dataone = data[0]
 	datatwo = list(dataone.items())[0]
 	datathree = datatwo[1]
@@ -47,11 +47,3 @@ def getData(stock):
 	return stockData
 
 getData('AAPL')
-
-# parameter accepted will be the stock symbol 
-'''def getDataFrom(nameofstock):
-	
-	# will create a list containing the below info
-	data = [stockSymbol, currentPrice, currentDate]
-	# returns the data
-	return data '''
