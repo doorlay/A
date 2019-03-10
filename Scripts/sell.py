@@ -1,17 +1,21 @@
+# scr function gets the database from the text file in a list.
 from scrape import scr
 
-# data needed to make a sell decision
+# getData function returns stock symbol, current price, and and current date in a list.
+from scrape import getData
+
 '''
-Stock symbol
-current price
+data needed to make a sell decision:
+
+Stock symbol (done)
+current price (done)
 purchase price
 date of purchase
-current date
+current date (done)
 '''
-# Assigns an array containing all the database info to a variable
-DBarray = scr()
-print("Here are the stocks you have available:")
-print(DBarray[0],DBarray[3])
+
+# just need purchase price and date of purchase, which is stored in my database. Perfect!
+
 
 
 def timecheck():
