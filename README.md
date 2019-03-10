@@ -1,5 +1,5 @@
 # Stock Scrape
-A python web scraping program to help manage stock portfolios. Est. completion date: May 2019
+A python web scraping program to help manage stock portfolios. EST. COMPLETION DATE: May 2019
 
 ---
 **Getting started**  
