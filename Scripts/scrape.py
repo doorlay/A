@@ -3,36 +3,32 @@ from alpha_vantage.timeseries import TimeSeries
 # Imports json, to parse the api output
 import json
 
-# This first function creates an array from the database of purchased stocks.
 # This function will be imported to the 'sell.py' file within the Scripts folder.
 def scr():
 	database1 = open("Database/database.txt")
 	database2 = database1.read()
 	DBarray = database2.splitlines()
+	# Returns an array of all purchased stocks from the database.txt file
 	return DBarray
 
-
-# The info will then be sent through the other files to be analyzed.
-
-# below is a psuedo-code example of how I want my data fetching function to run.
-# This function will be imported to both the sell.py file and the buy.py file, in order to fetch real time prices on command.
-
-# maybe send the parameter in with some ' ' around it? See if that works.
 def getDataFrom(stock):
-	# Assigns ts to an api call that uses the user's api key
+	# Enter your personal api key here! Required to make api calls
 	ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
-	# Assings data to the output of the api call, using the stock symbol as parameter
-	# the stock symbol generally has '' around it. Check to see if this works.
+	
+	# Entire json output is assigned to 'data'
 	data = ts.get_intraday(symbol=stock, outputsize='compact', interval = '1min')
-	# datatype of dataone appears to be dictionary, unlike data which is a tuple.
+	
+	# The following three assignments isolate the most current info on the specific stock
 	dataone = data[0]
 	datatwo = list(dataone.items())[0]
 	datathree = datatwo[1]
+	
+	# Gets just the current price of the stock, assigns it to 'datafour'
 	datafour = datathree['1. open']
 	print(datafour)
 
 
-
+# Parameters must be entered within the quotes. I'll figure out a way around this soon.
 getDataFrom('MSFT')
 
 # parameter accepted will be the stock symbol 
