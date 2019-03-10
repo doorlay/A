@@ -10,7 +10,7 @@ import json
 # Function to return the current date
 def getDate():
 	currentDT = datetime.datetime.now()
-	currentDate = currentDT.strftime("%H:%M:%S")
+	currentDate = currentDT.strftime("%Y/%m/%d")
 	return currentDate
 
 # This function will be imported to the 'sell.py' file within the Scripts folder.
