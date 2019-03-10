@@ -1,8 +1,17 @@
 # Imports TimeSeries function which gets real time data
 from alpha_vantage.timeseries import TimeSeries
 
+# Imports module to get current date
+import datetime
+
 # Imports json, to parse the api output
 import json
+
+# Function to return the current date
+def getDate():
+	currentDT = datetime.datetime.now()
+	currentDate = currentDT.strftime("%H:%M:%S")
+	return currentDate
 
 # This function will be imported to the 'sell.py' file within the Scripts folder.
 def scr():
@@ -12,6 +21,7 @@ def scr():
 	# Returns an array of all purchased stocks from the database.txt file
 	return DBarray
 
+# Quick note, the price seems to have 0% error on NYSE traded, but 0.08% error on NASDAQ. Weird.
 def getPrice(stock):
 	# Enter your personal api key here! Required to make api calls
 	ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
@@ -28,14 +38,20 @@ def getPrice(stock):
 	datafour = datathree['1. open']
 	return datafour
 
+# Enter the stock with 'quotes' around it.
+def getData(stock):
+	price = getPrice(stock)
+	date = getDate()
+	stockData = [stock, price, date]
+	print(stockData)
+	return stockData
 
-# Parameters must be entered within the quotes. I'll figure out a way around this soon.
-getPrice('MSFT')
+getData('AAPL')
 
 # parameter accepted will be the stock symbol 
 '''def getDataFrom(nameofstock):
 	
 	# will create a list containing the below info
-	data = [stockSymbol, currentPrice, currentData]
+	data = [stockSymbol, currentPrice, currentDate]
 	# returns the data
 	return data '''
