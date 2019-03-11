@@ -44,5 +44,3 @@ def getData(stock):
 	date = getDate()
 	stockData = [stock, price, date]
 	return stockData
-
-getData('AAPL')
