@@ -6,7 +6,8 @@ from scrape import getData
 
 # just need purchase price and date of purchase, which is stored in my database. Perfect!
 
-getData('AMD')
+test = getData('AMD')
+print(test)
 
 '''
 def timecheck():
