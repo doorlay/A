@@ -13,6 +13,7 @@ def getDate():
 	currentDate = currentDT.strftime("%m/%d/%Y")
 	return currentDate
 
+# This function will be imported to sell.py, as it scrapes the database for all purchased stocks.
 def scr():
 	database1 = open("Database/database.txt")
 	database2 = database1.read()
