@@ -13,7 +13,6 @@ def getDate():
 	currentDate = currentDT.strftime("%m/%d/%Y")
 	return currentDate
 
-# This function will be imported to the 'sell.py' file within the Scripts folder.
 def scr():
 	database1 = open("Database/database.txt")
 	database2 = database1.read()
@@ -24,7 +23,7 @@ def scr():
 # Quick note, the price seems to have 0% error on NYSE traded, but 0.08% error on NASDAQ. Weird.
 def getPrice(stock):
 	# Enter your personal api key here! Required to make api calls
-	ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
+	ts = TimeSeries(key='')
 	
 	# Entire json output is assigned to 'data'
 	data = ts.get_intraday(symbol=stock, outputsize='compact', interval = '1min')
