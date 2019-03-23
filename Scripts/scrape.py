@@ -24,7 +24,7 @@ def scr():
 # Quick note, the price seems to have 0% error on NYSE traded, but 0.08% error on NASDAQ. Weird.
 def getPrice(stock):
 	# Enter your personal api key here! Required to make api calls
-	ts = TimeSeries(key='')
+	ts = TimeSeries(key='52UIN9CWN6RNDHXJ')
 	
 	# Entire json output is assigned to 'data'
 	data = ts.get_intraday(symbol=stock, outputsize='compact', interval = '1min')
