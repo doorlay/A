@@ -16,7 +16,7 @@ def getDate():
 
 # This function will be imported to sell.py, as it scrapes the database for all purchased stocks.
 def scr():
-	database1 = open("Database/database.txt")
+	database1 = open("database.txt")
 	database2 = database1.read()
 	DBarray = database2.splitlines()
 	# Returns an array of all purchased stocks from the database.txt file
