@@ -1,7 +1,5 @@
 # getData function returns stock symbol, current price, and and current date in a list.
-from scrape import getData
-# scr function scrapes the database for information about purchased stocks
-from scrape import scr
+import funcs as f
 # Current version gets declared as a global var up here
 version = 1.0
 
@@ -9,7 +7,7 @@ version = 1.0
 
 # This function gets a list of all stock symbols in the database
 def getSymbolsDatabase():
-    dataList = scr()
+    dataList = f.scr()
     symbols = []
     # I'm going to try and do a flag while loop here
     flag = False
@@ -25,7 +23,7 @@ def getSymbolsDatabase():
 
 # This function gets a list of all prices in the database
 def getPricesDatabase():
-    dataList = scr()
+    dataList = f.scr()
     prices = []
     # I'm going to try and do a flag while loop here
     flag = False
@@ -41,7 +39,7 @@ def getPricesDatabase():
 
 # This function gets a list of all dates in the database 
 def getDatesDatabase():
-    dataList = scr()
+    dataList = f.scr()
     dates = []
     # I'm going to try and do a flag while loop here
     flag = False
@@ -85,7 +83,7 @@ def current():
     totalPrice = []
     # Loops through all stocks, printing out their current prices
     for stock in stockSymbols:
-        price = getData(stock)
+        price = f.getData(stock)
         converted = float(price[1])
         totalPrice.append(converted)
         print("{} is valued at ${} \n" .format(stock, price[1]))
@@ -98,7 +96,7 @@ def returnCurrent():
     totalPrice = []
     # Loops through all stocks, printing out their current prices
     for stock in stockSymbols:
-        price = getData(stock)
+        price = f.getData(stock)
         converted = float(price[1])
         totalPrice.append(converted)
     newTotalPrice = sum(totalPrice)
@@ -128,7 +126,7 @@ def compareTotal():
 def main():
     # Some formatting to make stuff look pretty.
     print("-----------------------------------")
-    print("Welcome to StockScrape, version {}" .format(version))
+    print("Welcome to StockScrape, version 1.2")
     print("-----------------------------------")
 
     print("Would you like to... \n\n 1. Review portfolio \n 2. Check current prices \n 3. Compare\n")
