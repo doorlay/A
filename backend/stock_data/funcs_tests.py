@@ -1,10 +1,9 @@
-# File to test all of my functions in the funcs.py file
-
 import unittest
+from funcs import *
 
 class TestFuncs(unittest.TestCase):
     def test_getDate(self):
-        print('test')
+        pass
 
 
 

@@ -1,11 +1,4 @@
-# getData function returns stock symbol, current price, and and current date in a list.
 import funcs as f
-# Current version gets declared as a global var up here
-version = 1.0
-
-# This will act as the main file that everything flows through.
-
-
 
 def main():
     # Some formatting to make stuff look pretty.
@@ -45,4 +38,4 @@ def main():
 
 
 
-main()
+print(type(f.getDate()))
