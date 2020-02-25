@@ -1,9 +1,9 @@
-# Stock Scrape
+# Stock Data
 A bare-bones stock data scraper, written in Python.
 
 ---
 **Description**   
-Stock Scrape is a lightweight stock data scraper written in python. The program utilizes the Alpha Vantage API to get current prices from NYSE and NASDAQ stocks. The programs intakes a stock symbol, and then outputs an array containing the stock symbol, current stock price, and current date. This program can be used as a great starting point for a more complex stock data scraper.
+Stock Data is a lightweight stock data scraper written in python. The program utilizes the Alpha Vantage API to get current prices from NYSE and NASDAQ stocks. The programs intakes a stock symbol, and then outputs an array containing the stock symbol, current stock price, and current date. This program can be used as a great starting point for a more complex stock data scraper.
 
 
 **Getting started**  
