@@ -17,3 +17,6 @@ Stock Scrape is a lightweight stock data scraper written in python. The program 
 **How to Run**  
 
 To run, head to the main.py file. Within the file, change the stock symbol inside of the 'getData()' function. Execute the program to see the current data, outputted in an array. Change the program as you see fit, and enjoy!
+
+
+Every line within the tsv file is a new purchase or sale

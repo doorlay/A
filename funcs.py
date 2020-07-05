@@ -139,7 +139,7 @@ def returnCurrent():
     newTotalPrice = sum(totalPrice)
     return round(newTotalPrice,2)
 
-    # I can tell this is going to be the hardest function here to write. yikes
+# I can tell this is going to be the hardest function here to write. yikes
 def compareTotal():
     symbols = getSymbolsDatabase()
     prices = getPricesDatabase()

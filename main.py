@@ -34,8 +34,4 @@ def main():
         else:
             q = input("You typed neither. Type a number from above: ")
 
-        
-
-
-
-print(type(f.getDate()))
+main()
