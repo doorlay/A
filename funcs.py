@@ -12,6 +12,7 @@ def getDate():
 	currentDate = currentDT.strftime("%m/%d/%Y")
 	return currentDate
 
+# TODO
 # Returns all stocks purchased
 # none -> list
 def scr():
@@ -19,6 +20,7 @@ def scr():
 	database2 = database1.read()
 	DBarray = database2.splitlines()
 	return DBarray
+
 
 # Returns the price of a given stock
 # string -> 

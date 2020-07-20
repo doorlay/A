@@ -10,7 +10,7 @@ Stock Data is a lightweight stock data scraper written in python. The program ut
 1. Register an API key [here](https://www.alphavantage.co/), for free.
 2. Ensure that you are running a current version of python. If not, head [here](https://www.python.org/downloads/) to download.
 3. Head to your terminal and use the pip installer to install the alpha vantage module, with the following command:  
-` pip install alpha_vantage`. If you're having difficulty with the pip installer, head [here](https://www.makeuseof.com/tag/install-pip-for-python/) to troubleshoot.
+` pip3 install alpha_vantage`. If you're having difficulty with the pip installer, head [here](https://www.makeuseof.com/tag/install-pip-for-python/) to troubleshoot.
 4. Head over to the 'scrape.py' file within the scripts folder. On line 26, enter your personal API key from step one inside the parameter titled 'key'.
 5. You're ready to start!
 
@@ -18,5 +18,6 @@ Stock Data is a lightweight stock data scraper written in python. The program ut
 
 To run, head to the main.py file. Within the file, change the stock symbol inside of the 'getData()' function. Execute the program to see the current data, outputted in an array. Change the program as you see fit, and enjoy!
 
+Completely refactor this. That would make this look way better.
 
-Every line within the tsv file is a new purchase or sale
+This will just be a quick program to scrape current stock data and compare it to data in a .csv file.
